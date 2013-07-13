@@ -124,11 +124,13 @@ int busca_por_local(TNo_Local *raizDaArvore, int local)
 
 void travessia(TNo_Codigo *node)
 {
-    printf("Travessia");
+    printf("Travessia\n");
 	if (node)
 	{
             printf("\nCodigo : %d\n",node->codigo);
 		travessia(node->esquerda);
 		travessia(node->direita);
 	}
+    
+    printf("Fim da Travessia\n\n");
 }

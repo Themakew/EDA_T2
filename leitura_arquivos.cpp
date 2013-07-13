@@ -34,11 +34,11 @@ void controi_arvores() {
         informacoes[identificador].codigo = codigo;
         inserirArvoreCodigo(arvore_codigos,codigo,identificador);
         
-        informacoes[identificador].local = local;
-        inserirArvoreNome(arvore_nomes,disciplina,identificador);
-        
         strcpy(informacoes[identificador].nomeDoCurso, disciplina);
         inserirArvoreLocal(arvore_locais,local,identificador);
+        
+        informacoes[identificador].local = local;
+        inserirArvoreNome(arvore_nomes,disciplina,identificador);
         
     }
     
